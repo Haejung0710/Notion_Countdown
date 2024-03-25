@@ -20,7 +20,7 @@ body{
   letter-spacing: 5px;
 }
 
-.days, .hours, .minutes, {
+.days, .hours, .minutes {
   display: inline-block;
   padding: 20px;
   width: 100px;
@@ -32,11 +32,12 @@ body{
 }
 
 .hours {
-  background: #c0c1c2;
- }
+  background: #FFFDF1;
+  color: #00462A;
+}
 
 .minutes {
-  background: #a9c79b;
+  background: #FFFDF1;
 }
 
 .numbers {
@@ -89,14 +90,15 @@ body{
         <div  id="hours" class="numbers"> </div>hours</div> 
       <div class="minutes"> 
         <div  id="minutes" class="numbers"> </div>minutes</div> 
-        </div>
+      
+      </div>
 
 </div>
 
 </body>
 <script>
     const year = new Date().getFullYear();
-const myDate = new Date('July 10, 2024 00:00:00');
+const myDate = new Date('July 10, 2025 00:00:00');
 console.log(myDate);
 
 // countdown
@@ -117,7 +119,8 @@ let timer = setInterval(function() {
   document.getElementById("days").innerHTML=days
   document.getElementById("hours").innerHTML=hours
   document.getElementById("minutes").innerHTML=minutes
- 
+  
+
 
 }, 1);
 </script>

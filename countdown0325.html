@@ -12,7 +12,7 @@ body{
 }
   
 #timer {
-  color: #00462A;
+  color: #eeeeee;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
@@ -20,7 +20,7 @@ body{
   letter-spacing: 5px;
 }
 
-.days, .hours, .minutes {
+.days, .hours, .minutes, .seconds {
   display: inline-block;
   padding: 20px;
   width: 100px;
@@ -28,20 +28,25 @@ body{
 }
 
 .days {
-  background: #00462A;
+  background: #EF2F3C;
 }
 
 .hours {
-  background: #9a9b9c;
- }
+  background: #eeeeee;
+  color: #183059;
+}
 
 .minutes {
-  background: #adcc9d;
+  background: #276FBF;
+}
+
+.seconds {
+  background: #F0A202;
 }
 
 .numbers {
   font-family: 'Montserrat', sans-serif;
-  color:  #00462A;
+  color:  #183059;
   font-size: 4em;
   text-align: center;
 }
@@ -98,7 +103,7 @@ body{
 </body>
 <script>
     const year = new Date().getFullYear();
-const myDate = new Date('Jul 10, 2024 00:00:00');
+const myDate = new Date('Oct 15, 2024 00:00:00');
 console.log(myDate);
 
 // countdown
